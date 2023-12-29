@@ -952,9 +952,10 @@ export interface ApiSkillSkill extends Schema.CollectionType {
   attributes: {
     name: Attribute.String & Attribute.Required;
     percentage: Attribute.Integer & Attribute.Required;
-    color: Attribute.String & Attribute.Required;
     icon: Attribute.String & Attribute.Required;
     category: Attribute.Enumeration<['web', 'design']>;
+    color: Attribute.String &
+      Attribute.CustomField<'plugin::color-picker.color'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

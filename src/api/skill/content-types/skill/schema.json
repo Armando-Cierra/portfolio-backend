@@ -22,11 +22,6 @@
       "type": "integer",
       "required": true
     },
-    "color": {
-      "pluginOptions": {},
-      "type": "string",
-      "required": true
-    },
     "icon": {
       "pluginOptions": {},
       "type": "string",
@@ -38,6 +33,11 @@
         "web",
         "design"
       ]
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
     }
   }
 }
