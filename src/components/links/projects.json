@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_links_projects",
+  "info": {
+    "displayName": "projects",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "solid",
+        "outline"
+      ]
+    }
+  }
+}

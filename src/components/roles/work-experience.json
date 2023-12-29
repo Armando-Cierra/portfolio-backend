@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_roles_work_experiences",
+  "info": {
+    "displayName": "workExperience",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    }
+  }
+}

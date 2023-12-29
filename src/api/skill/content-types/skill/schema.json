@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "singularName": "skill",
+    "pluralName": "skills",
+    "displayName": "Skills",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "percentage": {
+      "pluginOptions": {},
+      "type": "integer",
+      "required": true
+    },
+    "color": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "web",
+        "design"
+      ]
+    }
+  }
+}
