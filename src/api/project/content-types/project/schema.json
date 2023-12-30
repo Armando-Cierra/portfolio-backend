@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "projects"
+    "displayName": "projects",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -35,11 +36,12 @@
       "targetField": "name"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -82,14 +84,15 @@
       "target": "api::tag.tag"
     },
     "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -106,6 +109,27 @@
         }
       },
       "component": "links.projects"
+    },
+    "partOfSlideshow": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "default": "false"
+    },
+    "date": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "date"
     }
   }
 }

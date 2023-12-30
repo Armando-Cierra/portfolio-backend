@@ -774,6 +774,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     singularName: 'project';
     pluralName: 'projects';
     displayName: 'projects';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -838,6 +839,19 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+      }>;
+    partOfSlideshow: Attribute.Enumeration<['true', 'false']> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }> &
+      Attribute.DefaultTo<'false'>;
+    date: Attribute.Date &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
         };
       }>;
     createdAt: Attribute.DateTime;
