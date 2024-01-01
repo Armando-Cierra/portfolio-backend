@@ -811,13 +811,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    description: Attribute.Text &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     category: Attribute.Enumeration<['web', 'design']> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -852,6 +845,20 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
+        };
+      }>;
+    keyname: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    longDescription: Attribute.Blocks &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
         };
       }>;
     createdAt: Attribute.DateTime;
