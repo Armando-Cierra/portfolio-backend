@@ -804,14 +804,14 @@ export interface ApiProjectProject extends Schema.CollectionType {
           localized: false;
         };
       }>;
-    shortDescription: Attribute.String &
+    shortDescription: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    description: Attribute.String &
+    description: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -908,7 +908,7 @@ export interface ApiServiceService extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    description: Attribute.String &
+    description: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
