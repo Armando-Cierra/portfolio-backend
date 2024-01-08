@@ -4,7 +4,8 @@
   "info": {
     "singularName": "work-experience",
     "pluralName": "work-experiences",
-    "displayName": "Work Experiences"
+    "displayName": "Work Experiences",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -22,30 +23,21 @@
         }
       },
       "type": "string",
-      "unique": true,
+      "unique": false,
       "required": true
     },
-    "slug": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "uid",
-      "targetField": "name"
-    },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
-      },
-      "required": true
+      }
     },
     "jobType": {
       "pluginOptions": {
@@ -57,8 +49,14 @@
       "enum": [
         "Full-Time",
         "Half-Time",
+        "Temporary",
+        "Internship",
+        "Seasonal",
         "Tiempo Completo",
-        "Medio Tiempo"
+        "Medio Tiempo",
+        "Temporal",
+        "Prácticas",
+        "De Temporada"
       ],
       "required": true
     },

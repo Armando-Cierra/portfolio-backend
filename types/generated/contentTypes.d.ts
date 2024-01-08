@@ -1045,6 +1045,7 @@ export interface ApiWorkExperienceWorkExperience extends Schema.CollectionType {
     singularName: 'work-experience';
     pluralName: 'work-experiences';
     displayName: 'Work Experiences';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -1057,13 +1058,6 @@ export interface ApiWorkExperienceWorkExperience extends Schema.CollectionType {
   attributes: {
     name: Attribute.String &
       Attribute.Required &
-      Attribute.Unique &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    slug: Attribute.UID<'api::work-experience.work-experience', 'name'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1077,7 +1071,18 @@ export interface ApiWorkExperienceWorkExperience extends Schema.CollectionType {
         };
       }>;
     jobType: Attribute.Enumeration<
-      ['Full-Time', 'Half-Time', 'Tiempo Completo', 'Medio Tiempo']
+      [
+        'Full-Time',
+        'Half-Time',
+        'Temporary',
+        'Internship',
+        'Seasonal',
+        'Tiempo Completo',
+        'Medio Tiempo',
+        'Temporal',
+        'Pr\u00E1cticas',
+        'De Temporada'
+      ]
     > &
       Attribute.Required &
       Attribute.SetPluginOptions<{
