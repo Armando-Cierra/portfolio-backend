@@ -841,12 +841,6 @@ export interface ApiProjectProject extends Schema.CollectionType {
         };
       }> &
       Attribute.DefaultTo<'false'>;
-    date: Attribute.Date &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
     keyname: Attribute.String &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -859,6 +853,12 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+      }>;
+    position: Attribute.Decimal &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
         };
       }>;
     createdAt: Attribute.DateTime;
@@ -977,6 +977,7 @@ export interface ApiSkillSkill extends Schema.CollectionType {
     category: Attribute.Enumeration<['web', 'design']>;
     color: Attribute.String &
       Attribute.CustomField<'plugin::color-picker.color'>;
+    position: Attribute.Decimal;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

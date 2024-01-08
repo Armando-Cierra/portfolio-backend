@@ -114,14 +114,6 @@
       ],
       "default": "false"
     },
-    "date": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "date"
-    },
     "keyname": {
       "pluginOptions": {
         "i18n": {
@@ -139,6 +131,14 @@
       },
       "type": "blocks",
       "required": true
+    },
+    "position": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "decimal"
     }
   }
 }
