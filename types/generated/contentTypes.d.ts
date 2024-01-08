@@ -1025,6 +1025,12 @@ export interface ApiTagTag extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    position: Attribute.Decimal &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::tag.tag', 'oneToOne', 'admin::user'> &

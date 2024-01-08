@@ -36,6 +36,14 @@
           "localized": true
         }
       }
+    },
+    "position": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "decimal"
     }
   }
 }
