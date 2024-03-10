@@ -1,4 +1,4 @@
-# Personal Portfolio - Frontend
+# Personal Portfolio - Backend
 
 <div style="width: 100%">
   <img src="https://res.cloudinary.com/dcldwtvku/image/upload/v1705124520/My-Portfolio/readme-cover_dwni7w.png" style="width: 100%; border-radius: 12px" />
